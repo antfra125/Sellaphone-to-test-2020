@@ -12,7 +12,7 @@
           <li>Handhållare</li>
         </ul>
       </section>
-      <input type="radio" v-model="phone" name="phone" value="200" placeholder="Phone" />
+      <input type="radio" v-model="phone" value="200" placeholder="Phone" />
     </div>
     <div class="phone">
       <img
@@ -26,7 +26,7 @@
           <li>Virtual touch</li>
         </ul>
       </section>
-      <input type="radio" v-model="phone" name="phone" value="250" placeholder="Phone" />
+      <input type="radio" v-model="phone" value="250" placeholder="Phone" />
     </div>
     <div class="phone">
       <img src="http://www.newsmobile.in/wp-content/uploads/2017/06/iPhone1.jpg" />
@@ -38,7 +38,7 @@
           <li>Handhållare</li>
         </ul>
       </section>
-      <input type="radio" v-model="phone" name="phone" value="110" placeholder="Phone" />
+      <input type="radio" v-model="phone" value="110" placeholder="Phone" />
     </div>
     <div class="phone">
       <img
@@ -52,7 +52,7 @@
           <li>Arm-processor</li>
         </ul>
       </section>
-      <input type="radio" v-model="phone" name="phone" value="200" placeholder="Phone" />
+      <input type="radio" v-model="phone" value="200" placeholder="Phone" />
     </div>
     <div class="phone">
       <img src="http://thefoxisblack.com/blogimages//samsung-display-centric-world.jpg" />
@@ -64,7 +64,7 @@
           <li>No more cool-aid</li>
         </ul>
       </section>
-      <input type="radio" v-model="phone" name="phone" value="100" placeholder="Phone" />
+      <input type="radio" v-model="phone" value="100" placeholder="Phone" />
     </div>
   </div>
 </template>
@@ -79,6 +79,7 @@ export default {
       set(value){
         this.$store.commit('setPhone', value)
         this.$store.commit('updateTotal')
+        this.$store.commit('toggleExtra', 'airyFlayphones')
       }
     }
   }

@@ -8,7 +8,9 @@ export default new Vuex.Store({
     phone: 0,
     contract: 0,
     data: 0,
-    extra: 0,
+    extras: {
+      airyFlayphones:{checked:false}
+    },
     total: 0
   },
   mutations: {
@@ -21,11 +23,11 @@ export default new Vuex.Store({
     setData(state, value){
       state.data = parseInt(value)||0
     },
-    setExtra(state, value){
-      state.extra = parseInt(value)||0
+    toggleExtra(state, name){
+      state.extras[name].checked = !state.extras[name].checked
     },
     updateTotal(state){
-      state.total = state.phone + state.contract + state.data + state.extra
+      state.total = state.phone + state.contract + state.data
     }
   },
   actions: {

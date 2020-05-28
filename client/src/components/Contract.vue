@@ -1,6 +1,6 @@
 <template>
   <div class="contracts">
-    <select id="contract" v-model="contract" name="contract" placeholder="Contract">
+    <select id="contract" v-model="contract" placeholder="Contract">
       <option value="0">Välj:</option>
       <option value="100">24 mån Guld</option>
       <option value="150">18 mån Silver</option>
