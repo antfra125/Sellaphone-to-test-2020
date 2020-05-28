@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Sellaphone 2019 fullstack prototype</title>
+  <title>Sellaphone 2019</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Chau+Philomene+One|Kaushan+Script'>
 
   <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
 
-<ul id="notice">
-</ul>
-<h1 class="logo">Sellaphone</h1>
-<main>
-  <form id="order">
+  <div id="notice">
+    <h2>Grattis!</h2>
+  </div>
+  <h1 class="logo">Sellaphone</h1>
+  <main>
     <div class="column">
       <h2>Välj telefon</h2>
       <div class="picker">
         <div class="phone">
-          <img src="https://d2wsh2n0xua73e.cloudfront.net/wp-content/uploads/2019/04/iPhone-11-Concept-9.jpg">
+          <img src="img/iphone-z.jpg">
           <section>
             <h2>iPhone Z</h2>
             <ul>
@@ -32,10 +34,10 @@
               <li>Handhållare</li>
             </ul>
           </section>
-          <input type="radio" name="phone" value="200" placeholder="Phone">
+          <input type="radio" name="phone" value="200">
         </div>
         <div class="phone">
-          <img src="https://images.techhive.com/images/idge/imported/imageapi/2015/01/14/17/011011-iphoney5-2-100546391-gallery.idge.jpg">
+          <img src="img/iphone-g.jpg">
           <section>
             <h2>iPhone G</h2>
             <ul>
@@ -44,10 +46,10 @@
               <li>Virtual touch</li>
             </ul>
           </section>
-          <input type="radio" name="phone" value="250" placeholder="Phone">
+          <input type="radio" name="phone" value="250">
         </div>
         <div class="phone">
-          <img src="http://www.newsmobile.in/wp-content/uploads/2017/06/iPhone1.jpg">
+          <img src="img/iphone-mini.jpg">
           <section>
             <h2>iPhone Mini</h2>
             <ul>
@@ -56,10 +58,10 @@
               <li>Handhållare</li>
             </ul>
           </section>
-          <input type="radio" name="phone" value="110" placeholder="Phone">
+          <input type="radio" name="phone" value="110">
         </div>
         <div class="phone">
-          <img src="http://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/update-samsung-gear-s3-android-wear-google-801981.jpg">
+          <img src="img/samsung-wear.jpg">
           <section>
             <h2>Samsung Wear</h2>
             <ul>
@@ -68,10 +70,10 @@
               <li>Arm-processor</li>
             </ul>
           </section>
-          <input type="radio" name="phone" value="200" placeholder="Phone">
+          <input type="radio" name="phone" value="200">
         </div>
         <div class="phone">
-          <img src="http://thefoxisblack.com/blogimages//samsung-display-centric-world.jpg">
+          <img src="img/i-drink-nokia.jpg">
           <section>
             <h2>iDrink Nokia</h2>
             <ul>
@@ -80,7 +82,7 @@
               <li>No more cool-aid</li>
             </ul>
           </section>
-          <input type="radio" name="phone" value="100" placeholder="Phone">
+          <input type="radio" name="phone" value="100">
         </div>
       </div>
     </div>
@@ -88,47 +90,46 @@
     <div class="column">
       <h2>Välj abonnemang</h2>
       <div class="contracts">
-        <select id="contract" name="contract" placeholder="Contract">
+        <select id="contract">
           <option value="0">Välj:</option>
-          <option value="100">24 mån Guld</option>
-          <option value="150">18 mån Silver</option>
+          <option value="150">24 mån Guld</option>
+          <option value="200">18 mån Silver</option>
           <option value="100">12 mån Student</option>
-          <option value="250">Ingen bindningstid</option>
-          <option value="850">Global inclusive</option>
+          <option value="350">Ingen bindningstid</option>
         </select>
       </div>
       <h2>Datamängd</h2>
       <div class="datas">
         <div class="data">
-          <input type="radio" name="data" value="50" placeholder="Data"><label>10 GB</label>
+          <input type="radio" name="data" value="50"><label>10 GB</label>
         </div>
         <div class="data">
-          <input type="radio" name="data" value="100" placeholder="Data"><label>25 GB</label>
+          <input type="radio" name="data" value="150"><label>50 GB</label>
         </div>
         <div class="data">
-          <input type="radio" name="data" value="150" placeholder="Data"><label>50 GB</label>
+          <input type="radio" name="data" value="200"><label>100 GB</label>
         </div>
         <div class="data">
-          <input type="radio" name="data" value="200" placeholder="Data"><label>100 GB</label>
+          <input type="radio" name="data" value="350"><label>250 GB</label>
         </div>
       </div>
       <h2>Tillval</h2>
       <div class="extras">
         <div class="extra">
           <label>Boomy bass box</label>
-          <input type="checkbox" name="boomy-bass-box" value="50" placeholder="Extras">
+          <input type="checkbox" value="50">
         </div>
         <div class="extra">
           <label>Cloudy insurance</label>
-          <input type="checkbox" name="cloudy-insurance" value="75" placeholder="Extras">
+          <input type="checkbox" value="75">
         </div>
         <div class="extra">
           <label>Recognize face</label>
-          <input type="checkbox" name="recognize-face" value="20" placeholder="Extras">
+          <input type="checkbox" value="20">
         </div>
         <div class="extra">
           <label>Airy Flayphones</label>
-          <input type="checkbox" name="airy-flayphones" value="30" placeholder="Extras">
+          <input type="checkbox" value="30">
         </div>
       </div>
     </div>
@@ -172,32 +173,35 @@
             <div>8</div>
             <div>9</div>
           </div>
-          <div class="numbers">         <div>&nbsp;</div>
+          <div class="numbers">
+            <div>&nbsp;</div>
           </div>
-          <div class="numbers">         <div>kr</div>
+          <div class="numbers">
+            <div>kr</div>
           </div>
         </div>
       </div>
-      <div id="details">
+      <form id="order">
         <button id="open-order">Beställ</button>
-        <input type="hidden" name="price" id="price" value="0">
-        <input type="text" name="first-name" id="first-name" placeholder="Förnamn" required>
-        <input type="text" name="last-name" id="last-name" placeholder="Efternamn" required>
-        <input type="tel" name="phone-number" id="phone-number" placeholder="Telefonnr" required>
-        <input type="email" name="email" id="email" placeholder="E-postadress" required>
-        <input type="number" name="street" id="street"  placeholder="Gatuadress" required>
-        <input type="text" name="zip" id="zip"  placeholder="Postnr" required>
-        <input type="text" name="city" id="city"  placeholder="Ort" required>
+        <input type="hidden" name="price" id="price" value="0" placeholder="Pris">
+        <input type="text" id="first-name" placeholder="Förnamn">
+        <input type="text" id="last-name" placeholder="Efternamn">
+        <input type="tel" id="phone" placeholder="Telefonnr">
+        <input type="email" id="email" placeholder="E-postadress">
+        <input type="text" id="street" placeholder="Gatuadress">
+        <input type="text" id="zip" placeholder="Postnr">
+        <input type="text" id="city" placeholder="Ort">
         <input type="submit" value="Skicka">
-      </div>
+      </form>
     </div>
-  </form>
-</main>
-<ul id="confirm">
-</ul>
+  </main>
+  <div id="confirm">
+    <h2></h2>
+    <button id="return">Stäng</button>
+  </div>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script  src="js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="js/index.js"></script>
 
 </body>
 
