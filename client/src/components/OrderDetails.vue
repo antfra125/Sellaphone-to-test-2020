@@ -1,14 +1,32 @@
 <template>
   <div id="details">
-    <button id="open-order">Beställ</button>
-    <input type="hidden" name="price" id="price" value="0" />
-    <input type="text" name="first-name" id="first-name" placeholder="Förnamn" required />
-    <input type="text" name="last-name" id="last-name" placeholder="Efternamn" required />
-    <input type="tel" name="phone-number" id="phone-number" placeholder="Telefonnr" required />
-    <input type="email" name="email" id="email" placeholder="E-postadress" required />
-    <input type="number" name="street" id="street" placeholder="Gatuadress" required />
-    <input type="text" name="zip" id="zip" placeholder="Postnr" required />
-    <input type="text" name="city" id="city" placeholder="Ort" required />
-    <input type="submit" value="Skicka" />
+    <button id="open-order" @click="toggleOrderForm">Beställ</button>
+    <div v-if="showOrderForm">
+      <input type="hidden" v-model="price" value="0" />
+      <input type="text" v-model="firstName" placeholder="Förnamn" required />
+      <input type="text" v-model="lastName" placeholder="Efternamn" required />
+      <input type="tel" v-model="phoneNumber" placeholder="Telefonnr" required />
+      <input type="email" v-model="email" placeholder="E-postadress" required />
+      <input type="number" v-model="street" placeholder="Gatuadress" required />
+      <input type="text" v-model="zip" placeholder="Postnr" required />
+      <input type="text" v-model="city" placeholder="Ort" required />
+      <input type="submit" value="Skicka" />
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  data(){
+    return{
+      showOrderForm: false
+    }
+  },
+  methods:{
+    toggleOrderForm(e){
+      e.preventDefault()
+      this.showOrderForm = !this.showOrderForm
+    }
+  }
+}
+</script>

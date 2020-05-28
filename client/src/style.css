@@ -172,7 +172,8 @@ div#details{
   padding:10px;
   border-radius:10px;
 }
-div#details>*{
+div#details>div>*,
+div#details>button{
   background-color:rgba(0,0,0,0);
   color:white;
   border:1px solid #666;
@@ -181,14 +182,15 @@ div#details>*{
   width:100%;
   font-family: 'Kaushan Script', cursive;
 }
-div#details>*:focus{
+div#details>div>*:focus,
+div#details>button:focus{
   outline:none;
 }
-div#details>input{
- display:none;
+div#details>div>input{
+ /*display:none;*/
 }
 div#details>button,
-div#details>input:last-child{
+div#details>div>input:last-child{
   font-family: 'Chau Philomene One', sans-serif;
 }
 div#details>h2{
