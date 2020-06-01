@@ -25,11 +25,20 @@ app.use(bodyParser.json({limit: '50mb'}));
 // Serve files from the www folder
 app.use(express.static('www'));
 
-// Create a route that will respond with all
-// data from the user table in MySQL as JSON
+// A route with order data from MySQL, served as JSON
 app.get('/api/orders', function (req, res) {
   // make the query to the database
   db.query('SELECT * FROM orders', function (error, results) {
+    // Send the error if there exists an error
+    // otherwise the results of the query to the browser as JSON
+    res.json(error || results);
+  });
+});
+
+// A route with phones data from MySQL, served as JSON
+app.get('/api/phones', function (req, res) {
+  // make the query to the database
+  db.query('SELECT * FROM phones', function (error, results) {
     // Send the error if there exists an error
     // otherwise the results of the query to the browser as JSON
     res.json(error || results);
@@ -48,16 +57,9 @@ app.post('/api/orders', function (req, res) {
   }
   // make the query to the database
   db.query('INSERT INTO orders SET ?', req.body, function (error, results) {
-    if(error){
-      res.json(error);
-      return;
-    }
-    db.query('SELECT * FROM orders WHERE id = (SELECT LAST_INSERT_ID())', function (error, results) {
-      res.json(error || results);
-    });
+    res.json(error || results);
   });
 });
-
 
 
 // Start the web server at a port
