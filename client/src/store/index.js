@@ -5,17 +5,24 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    phone: 0,
+    phone: {price:0},
+    phones:[],
     contract: 0,
     data: 0,
     extras: {
-      airyFlayphones:{checked:false}
+      airyFlayphones:{checked:false},
+      boomyBassBox:{checked:false},
+      cloudyInsurance:{checked:false},
+      recognizeFace:{checked:false},
     },
     total: 0
   },
   mutations: {
-    setPhone(state, value){
-      state.phone = parseInt(value)||0
+    setPhone(state, phone){
+      state.phone = phone
+    },
+    setPhones(state, phones){
+      state.phones = phones
     },
     setContract(state, value){
       state.contract = parseInt(value)||0
@@ -27,11 +34,19 @@ export default new Vuex.Store({
       state.extras[name].checked = !state.extras[name].checked
     },
     updateTotal(state){
-      state.total = state.phone + state.contract + state.data
+      state.total = state.phone.price + state.contract + state.data
+    },
+    updateDiscounts(state){
+      if(state.phone.name === 'iPhone Z' && state.contract === 150){
+        state.total = state.total * 0.9
+      }
     }
   },
   actions: {
-  },
-  modules: {
+    async fetchPhones({commit}){
+      let response = await fetch('api/phones')
+      let phones = await response.json()
+      commit('setPhones', phones)
+    }
   }
 })

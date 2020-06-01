@@ -29,6 +29,30 @@ export default {
       set(){
         this.$store.commit('toggleExtra', 'airyFlayphones')
       }
+    },
+    boomyBassBox:{
+      get(){
+        return this.$store.state.extras.boomyBassBox.checked
+      },
+      set(){
+        this.$store.commit('toggleExtra', 'boomyBassBox')
+      }
+    },
+    cloudyInsurance:{
+      get(){
+        return this.$store.state.extras.cloudyInsurance.checked
+      },
+      set(){
+        this.$store.commit('toggleExtra', 'cloudyInsurance')
+      }
+    },
+    recognizeFace:{
+      get(){
+        return this.$store.state.extras.recognizeFace.checked
+      },
+      set(){
+        this.$store.commit('toggleExtra', 'recognizeFace')
+      }
     }
   }
 }
