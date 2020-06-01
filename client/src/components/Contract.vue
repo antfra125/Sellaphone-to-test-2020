@@ -1,12 +1,8 @@
 <template>
   <div class="contracts">
-    <select id="contract" v-model="contract" placeholder="Contract">
+    <select id="contract" v-model="chosenContract">
       <option value="0">Välj:</option>
-      <option value="100">24 mån Guld</option>
-      <option value="150">18 mån Silver</option>
-      <option value="100">12 mån Student</option>
-      <option value="250">Ingen bindningstid</option>
-      <option value="850">Global inclusive</option>
+      <option v-for="(option, index) in contracts" :key="index" :value="option.id">{{option.name}}</option>
     </select>
   </div>
 </template>
@@ -14,15 +10,21 @@
 <script>
 export default {
   computed:{
-    contract:{
+    chosenContract:{
       get(){
-        return this.$store.state.contract
+        return this.$store.state.contract.id || 0
       },
-      set(value){
-        this.$store.commit('setContract', value)
+      set(id){
+        this.$store.commit('setContract', id)
         this.$store.commit('updateTotal')
       }
+    },
+    contracts(){
+      return this.$store.state.contracts
     }
+  },
+  created(){
+    this.$store.dispatch('fetchContracts')
   }
 }
 </script>

@@ -45,6 +45,16 @@ app.get('/api/phones', function (req, res) {
   });
 });
 
+// A route with contracts data from MySQL, served as JSON
+app.get('/api/contracts', function (req, res) {
+  // make the query to the database
+  db.query('SELECT * FROM contracts', function (error, results) {
+    // Send the error if there exists an error
+    // otherwise the results of the query to the browser as JSON
+    res.json(error || results);
+  });
+});
+
 let wantedFields = ['first_name', 'phone', 'contract', 'data', 'boomy_bass_box', 'cloudy_insurance', 'recognize_face', 'order-placed', 'price', 'last_name', 'phone_number', 'email', 'street', 'zip', 'city'];
 
 // receive data

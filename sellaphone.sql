@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.36)
 # Database: sellaphone
-# Generation Time: 2020-06-01 13:20:38 +0000
+# Generation Time: 2020-06-01 23:16:39 +0000
 # ************************************************************
 
 
@@ -18,6 +18,33 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+# Dump of table contracts
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `contracts`;
+
+CREATE TABLE `contracts` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `price` int(6) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+LOCK TABLES `contracts` WRITE;
+/*!40000 ALTER TABLE `contracts` DISABLE KEYS */;
+
+INSERT INTO `contracts` (`id`, `name`, `price`)
+VALUES
+	(1,'24 mån Guld',100),
+	(2,'18 mån Silver',150),
+	(3,'12 mån Student',100),
+	(4,'Ingen bindningstid',250),
+	(5,'Global inclusive',850);
+
+/*!40000 ALTER TABLE `contracts` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table orders
@@ -54,7 +81,8 @@ VALUES
 	(3,'Benjamin','Berglund',100,100,200,50,75,20,300,768540989,'benjaminber','1',21125,'Malmö','2019-10-17 22:7'),
 	(4,'Xenjamin','Xerglund',100,150,200,50,75,20,520,768540989,'benjaminber','2',21125,'Malmö','2019-5-17 9:13'),
 	(5,'Xenjamin','Xerglund',100,150,200,50,75,20,520,768540989,'benjaminber','2',21125,'Malmö','2019-5-17 9:13'),
-	(6,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+	(6,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(7,'Zenjamin','Zerglund',100,150,200,50,75,20,520,768540989,'benjaminber','2',21125,'Malmö','2019-5-17 9:13');
 
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
