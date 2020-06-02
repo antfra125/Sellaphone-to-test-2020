@@ -11,7 +11,7 @@
   "scripts": {
     "test:unit": "vue-cli-service test:unit --json --outputFile=./reports/unit-report.json",
     "test:selenium": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/ & exit 0",
-    "test:search": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/search.feature",
+    "test:search": "node node_modules/selenium-cucumber-js/index.js -f ./tests/selenium/features/search.feature",
     "test:loggin": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/loggin.feature",
     "test:postman": "newman run ./postman/gilfoylegosearch-test.postman_collection.json --reporters cli,json --reporter-json-export ./reports/postman-report.json",
     "report:selenium": "node ./ares/ares-selenium-reporter.js",
@@ -24,7 +24,7 @@
     "ares-helper": "^1.0.3",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.11.0",
-    "chromedriver": "^81.0.0",
+    "chromedriver": "^83.0.0",
     "core-js": "^3.6.4",
     "jquery": "^3.5.0",
     "selenium-cucumber-js": "^1.7.0",
