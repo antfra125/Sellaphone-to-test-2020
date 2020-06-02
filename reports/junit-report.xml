@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="loggin-feature;login-1,-login-3,-login-5-och-login-6" tests="7" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\loggin.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am on the homepage" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="9.834864601">
+        </testcase>
+        <testcase name="When I click the account button" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.144886301">
+        </testcase>
+        <testcase name="And I click on loggin in the dropdown menu" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.7881991">
+        </testcase>
+        <testcase name="And I enter the username &quot;admin&quot;" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.1798764">
+        </testcase>
+        <testcase name="And I enter the password &quot;admin&quot;" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.129016901">
+        </testcase>
+        <testcase name="And I click the login button" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.0168512">
+        </testcase>
+        <testcase name="Then I should be logged in" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="3.1107571">
+        </testcase>
+    </testsuite>
+    <testsuite name="loggin-feature;fail-to-log-in" tests="7" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\loggin.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I am on the homepage" classname="loggin-feature;fail-to-log-in" time="11.0930203">
+        </testcase>
+        <testcase name="When I click the account button" classname="loggin-feature;fail-to-log-in" time="0.170986">
+        </testcase>
+        <testcase name="And I click on loggin in the dropdown menu" classname="loggin-feature;fail-to-log-in" time="1.0341036">
+        </testcase>
+        <testcase name="And I enter the username &quot;fel&quot;" classname="loggin-feature;fail-to-log-in" time="0.2167622">
+        </testcase>
+        <testcase name="And I enter the password &quot;fel&quot;" classname="loggin-feature;fail-to-log-in" time="0.144069099">
+        </testcase>
+        <testcase name="And I click the login button" classname="loggin-feature;fail-to-log-in" time="0.0176392">
+        </testcase>
+        <testcase name="Then I should still be logged out" classname="loggin-feature;fail-to-log-in" time="1.123741901">
+        </testcase>
+    </testsuite>
+</testsuites>
