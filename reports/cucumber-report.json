@@ -1,0 +1,239 @@
+[
+  {
+    "description": "   As a user\n   I want to be able to\n   log in to my account\n   on the website",
+    "elements": [
+      {
+        "id": "loggin-feature;login-1,-login-3,-login-5-och-login-6",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "login-1, login-3, login-5 och login-6",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 9834864601
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click the account button",
+            "result": {
+              "status": "passed",
+              "duration": 144886301
+            },
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on loggin in the dropdown menu",
+            "result": {
+              "status": "passed",
+              "duration": 788199100
+            },
+            "line": 15,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:20"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I enter the username \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 179876400
+            },
+            "line": 16,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:28"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I enter the password \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 129016901
+            },
+            "line": 17,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the login button",
+            "result": {
+              "status": "passed",
+              "duration": 16851200
+            },
+            "line": 18,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:45"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be logged in",
+            "result": {
+              "status": "passed",
+              "duration": 3110757100
+            },
+            "line": 19,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:52"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 1662248600
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "loggin-feature;fail-to-log-in",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "fail to log in",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that I am on the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 11093020300
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click the account button",
+            "result": {
+              "status": "passed",
+              "duration": 170986000
+            },
+            "line": 28,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on loggin in the dropdown menu",
+            "result": {
+              "status": "passed",
+              "duration": 1034103600
+            },
+            "line": 29,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:20"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I enter the username \"fel\"",
+            "result": {
+              "status": "passed",
+              "duration": 216762200
+            },
+            "line": 30,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:28"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I enter the password \"fel\"",
+            "result": {
+              "status": "passed",
+              "duration": 144069099
+            },
+            "line": 31,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the login button",
+            "result": {
+              "status": "passed",
+              "duration": 17639200
+            },
+            "line": 32,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:45"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should still be logged out",
+            "result": {
+              "status": "passed",
+              "duration": 1123741901
+            },
+            "line": 33,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:61"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 1590119700
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "loggin-feature",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Loggin-feature",
+    "tags": [],
+    "uri": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\Selenium\\features\\loggin.feature"
+  }
+]
