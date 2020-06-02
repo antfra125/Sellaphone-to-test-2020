@@ -1,13 +1,13 @@
 // mocking tools (fetch mock)
 
 // vue store
-import store from '@/store/index.js'
+import store from '../../store/index.js'
 
 // vue test tools
 import {mount} from '@vue/test-utils'
 
 // component(s)
-import Phone from '@/components/Phone'
+import Phone from '../../components/Phone'
 
 // test data
 let phoneData = [
