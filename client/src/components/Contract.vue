@@ -12,7 +12,7 @@ export default {
   computed:{
     chosenContract:{
       get(){
-        return this.$store.state.contract.id || 0
+        return this.$store.state.contract.id||0
       },
       set(id){
         this.$store.commit('setContract', id)

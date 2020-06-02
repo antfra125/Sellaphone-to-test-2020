@@ -42,11 +42,11 @@ export default new Vuex.Store({
     toggleExtra(state, name){
       state.extras[name].checked = !state.extras[name].checked
     },
-    updateTotal(state){
-      state.total = state.phone.price + state.contract.price + state.data
+    updateTotal(state){ // @bug state.contract.price
+      state.total = state.phone.price + 0 + state.data
     },
-    updateDiscounts(state){
-      if(state.phone.name === 'iPhone Z' && state.contract.name === '18 mån Silver'){
+    updateDiscounts(state){ // @bug  && state.contract.name === '18 mån Silver'
+      if(state.phone.name === 'iPhone Z'){
         state.total = state.total * 0.9
       }
     }

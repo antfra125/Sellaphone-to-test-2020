@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:selenium": "node ../node_modules/selenium-cucumber-js/index.js -f ./tests/selenium/features/ & exit 0",
+    "test:unit": "vue-cli-service test:unit --json --outputFile=../reports/unit-report.json",
+    "test:postman": "newman run ./tests/postman/Sellaphone.postman_collection.json --reporters cli,json --reporter-json-export ../reports/postman-report.json"
   },
   "dependencies": {
     "core-js": "^3.6.4",
