@@ -1,8 +1,8 @@
 <template>
   <div id="details">
     <button id="open-order" @click="toggleOrderForm">Beställ</button>
+    <input type="hidden" v-model="total" id="price" value="0" />
     <div v-if="showOrderForm">
-      <input type="hidden" v-model="price" value="0" />
       <input type="text" v-model="firstName" placeholder="Förnamn" required />
       <input type="text" v-model="lastName" placeholder="Efternamn" required />
       <input type="tel" v-model="phoneNumber" placeholder="Telefonnr" required />
@@ -20,6 +20,11 @@ export default {
   data(){
     return{
       showOrderForm: false
+    }
+  },
+  computed:{
+    total(){
+      return this.$store.state.total
     }
   },
   methods:{
