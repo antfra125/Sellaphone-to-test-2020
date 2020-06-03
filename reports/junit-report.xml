@@ -5,7 +5,7 @@
             <property name="URI" value="/Applications/AMPPS/www/MVT19/Sellaphone-to-test-2020/client/tests/selenium/features/choose.feature">
             </property>
         </properties>
-        <testcase name="Given that I&apos;m at the Sellaphone page" classname="make-choices;when-i-choose-iphone-z-and-18-month-contract" time="6.532816993">
+        <testcase name="Given that I&apos;m at the Sellaphone page" classname="make-choices;when-i-choose-iphone-z-and-18-month-contract" time="10.498731459">
         </testcase>
         <testcase name="When I choose &apos;iPhone Z&apos;" classname="make-choices;when-i-choose-iphone-z-and-18-month-contract">
             <skipped message="">

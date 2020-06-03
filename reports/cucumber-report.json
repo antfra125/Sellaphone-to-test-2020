@@ -13,7 +13,7 @@
             "name": "that I'm at the Sellaphone page",
             "result": {
               "status": "passed",
-              "duration": 6532816993
+              "duration": 10498731459
             },
             "line": 4,
             "match": {
@@ -52,7 +52,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2770413080
+              "duration": 2817754271
             },
             "hidden": true,
             "match": {
