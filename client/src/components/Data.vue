@@ -1,20 +1,14 @@
 <template>
   <div class="datas">
-    <div class="data">
-      <input type="radio" v-model="data" value="50" placeholder="Data" />
-      <label>10 GB</label>
-    </div>
-    <div class="data">
-      <input type="radio" v-model="data" value="100" placeholder="Data" />
-      <label>25 GB</label>
-    </div>
-    <div class="data">
-      <input type="radio" v-model="data" value="150" placeholder="Data" />
-      <label>50 GB</label>
-    </div>
-    <div class="data">
-      <input type="radio" v-model="data" value="200" placeholder="Data" />
-      <label>100 GB</label>
+    <div v-for="(data, i) in datas" :key="i" class="data">
+      <input
+        type="radio"
+        :value="data.id"
+        name="theData"
+        :checked="chosenData.id==data.id"
+        @change="setData(data)"
+      />
+      <label>{{data.name}}</label>
     </div>
   </div>
 </template>
@@ -22,15 +16,22 @@
 <script>
 export default {
   computed:{
-    data:{
-      get(){
-        return this.$store.state.data
-      },
-      set(value){
-        this.$store.commit('setData', value)
-        this.$store.commit('updateTotal')
-      }
+    chosenData(){
+      return this.$store.state.data
+    },
+    datas(){
+      return this.$store.state.datas
     }
+  },
+  methods:{
+    setData(data){
+      this.$store.commit('setData', data)
+      this.$store.commit('updateTotal')
+      this.$store.commit('updateDiscounts')
+    }
+  },
+  created(){
+    this.$store.dispatch('fetchDatas')
   }
 }
 </script>

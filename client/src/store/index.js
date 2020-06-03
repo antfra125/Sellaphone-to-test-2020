@@ -5,11 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    phone: {price:0},
+    phone: {price:0, id:0, name:'', features:'', image:''},
     phones:[],
-    contract: {price:0},
+    contract: {price:0, id:0, name:''},
     contracts:[],
-    data: 0,
+    data: {price:0, id:0, name:''},
+    datas: [],
     extras: {
       airyFlayphones:{checked:false},
       boomyBassBox:{checked:false},
@@ -36,19 +37,34 @@ export default new Vuex.Store({
     setContracts(state, contracts){
       state.contracts = contracts
     },
-    setData(state, value){
-      state.data = parseInt(value)||0
+    setData(state, data){
+      state.data = data
+    },
+    setDatas(state, datas){
+      state.datas = datas
     },
     toggleExtra(state, name){
       state.extras[name].checked = !state.extras[name].checked
     },
-    updateTotal(state){ // @bug state.contract.price
-      state.total = state.phone.price + 0 + state.data
+    updateTotal(state){
+      console.log('state.contract', state.contract)
+      console.log('state.phone', state.phone)
+      state.total = state.phone.price + state.contract.price + state.data.price
     },
-    updateDiscounts(state){ // @bug  && state.contract.name === '18 mån Silver'
-      if(state.phone.name === 'iPhone Z'){
+    updateDiscounts(state){
+      if(state.phone.name === 'iPhone Z' && state.contract.name === '18 mån Silver'){
         state.total = state.total * 0.9
+        console.log('10% discount')
       }
+      if(state.phone.name === 'Samsung Wear' && state.contract.name === '18 mån Silver'){
+        state.total = state.total * 0.8
+        console.log('20% discount')
+      }
+      if(state.data.name === '100 GB' && state.contract.name === '24 mån Guld'){
+        state.total = state.total * 0.75
+        console.log('25% discount')
+      }
+      console.log(state.phone.name, state.contract.name, state.total)
     }
   },
   actions: {
@@ -61,6 +77,11 @@ export default new Vuex.Store({
       let response = await fetch('api/contracts')
       let contracts = await response.json()
       commit('setContracts', contracts)
+    },
+    async fetchDatas({commit}){
+      let response = await fetch('api/datas')
+      let datas = await response.json()
+      commit('setDatas', datas)
     }
   }
 })

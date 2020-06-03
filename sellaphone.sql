@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.36)
 # Database: sellaphone
-# Generation Time: 2020-06-01 23:16:39 +0000
+# Generation Time: 2020-06-03 16:10:29 +0000
 # ************************************************************
 
 
@@ -47,6 +47,32 @@ VALUES
 UNLOCK TABLES;
 
 
+# Dump of table datas
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `datas`;
+
+CREATE TABLE `datas` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `price` int(6) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+LOCK TABLES `datas` WRITE;
+/*!40000 ALTER TABLE `datas` DISABLE KEYS */;
+
+INSERT INTO `datas` (`id`, `name`, `price`)
+VALUES
+	(1,'10 GB',50),
+	(2,'25 GB',100),
+	(3,'50 GB',150),
+	(4,'100 GB',200);
+
+/*!40000 ALTER TABLE `datas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
 # Dump of table orders
 # ------------------------------------------------------------
 
@@ -82,7 +108,9 @@ VALUES
 	(4,'Xenjamin','Xerglund',100,150,200,50,75,20,520,768540989,'benjaminber','2',21125,'Malmö','2019-5-17 9:13'),
 	(5,'Xenjamin','Xerglund',100,150,200,50,75,20,520,768540989,'benjaminber','2',21125,'Malmö','2019-5-17 9:13'),
 	(6,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(7,'Zenjamin','Zerglund',100,150,200,50,75,20,520,768540989,'benjaminber','2',21125,'Malmö','2019-5-17 9:13');
+	(7,'Zenjamin','Zerglund',100,150,200,50,75,20,520,768540989,'benjaminber','2',21125,'Malmö','2019-5-17 9:13'),
+	(8,'Zenjamin','Zerglund',100,150,200,50,75,20,520,768540989,'benjaminber','2',21125,'Malmö','2019-5-17 9:13'),
+	(9,'Zenjamin','Zerglund',100,150,200,50,75,20,520,768540989,'benjaminber','2',21125,'Malmö','2019-5-17 9:13');
 
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;

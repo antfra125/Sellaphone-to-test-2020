@@ -17,6 +17,7 @@ export default {
       set(id){
         this.$store.commit('setContract', id)
         this.$store.commit('updateTotal')
+        this.$store.commit('updateDiscounts')
       }
     },
     contracts(){

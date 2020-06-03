@@ -33,6 +33,7 @@ export default {
     setPhone(phone){
       this.$store.commit('setPhone', phone)
       this.$store.commit('updateTotal')
+      this.$store.commit('updateDiscounts')
       this.$store.commit('toggleExtra', 'airyFlayphones')
     }
   },
