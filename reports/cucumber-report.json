@@ -12,12 +12,13 @@
             "keyword": "Given ",
             "name": "that I'm at the Sellaphone page",
             "result": {
-              "status": "passed",
-              "duration": 10498731459
+              "status": "failed",
+              "duration": 3137792600,
+              "error_message": "WebDriverError: permission denied\n    at Object.throwDecodedError (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\error.js:497:15)\n    at parseHttpResponse (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\http.js:519:13)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\firefox\\index.js:571:41)\n    at createDriver (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\index.js:645:16)\n    at new module.exports (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\runtime\\firefoxDriver.js:17:8)\n    at getDriverInstance (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\runtime\\world.js:39:22)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29\nFrom: Task: WebDriver.navigate().to(http://localhost:8080/)\n    at thenableWebDriverProxy.schedule (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at Navigation.to (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1131:25)\n    at thenableWebDriverProxy.get (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\webdriver.js:988:28)\n    at Object.loadPage (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\runtime\\helpers.js:17:23)\n    at createWorld.<anonymous> (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\client\\tests\\selenium\\step-definitions\\choose.js:7:19)"
             },
             "line": 4,
             "match": {
-              "location": "/Applications/AMPPS/www/MVT19/Sellaphone-to-test-2020/client/tests/selenium/step-definitions/choose.js:5"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\client\\tests\\selenium\\step-definitions\\choose.js:5"
             }
           },
           {
@@ -51,12 +52,13 @@
             "arguments": [],
             "keyword": "After ",
             "result": {
-              "status": "passed",
-              "duration": 2817754271
+              "status": "failed",
+              "duration": 1971301,
+              "error_message": "WebDriverError: permission denied\n    at Object.throwDecodedError (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\error.js:497:15)\n    at parseHttpResponse (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\http.js:519:13)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\firefox\\index.js:571:41)\n    at createDriver (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\index.js:645:16)\n    at new module.exports (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\runtime\\firefoxDriver.js:17:8)\n    at getDriverInstance (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\runtime\\world.js:39:22)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29\nFrom: Task: WebDriver.navigate().to(http://localhost:8080/)\n    at thenableWebDriverProxy.schedule (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at Navigation.to (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1131:25)\n    at thenableWebDriverProxy.get (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\webdriver.js:988:28)\n    at Object.loadPage (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\runtime\\helpers.js:17:23)\n    at createWorld.<anonymous> (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\client\\tests\\selenium\\step-definitions\\choose.js:7:19)\nFrom: Task: WebDriver.takeScreenshot()\n    at thenableWebDriverProxy.schedule (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at thenableWebDriverProxy.takeScreenshot (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1083:17)\n    at createWorld.<anonymous> (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\runtime\\world.js:253:27)\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)"
             },
             "hidden": true,
             "match": {
-              "location": "/Applications/AMPPS/www/MVT19/Sellaphone-to-test-2020/node_modules/selenium-cucumber-js/runtime/world.js:250"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\Sellaphone-to-test-2020\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -69,6 +71,6 @@
     "line": 1,
     "name": "Make choices",
     "tags": [],
-    "uri": "/Applications/AMPPS/www/MVT19/Sellaphone-to-test-2020/client/tests/selenium/features/choose.feature"
+    "uri": "C:/Users/admin.LANTBOFF4275/Documents/GitHub/Sellaphone-to-test-2020/client/tests/selenium/features/choose.feature"
   }
 ]

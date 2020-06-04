@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="make-choices;when-i-choose-iphone-z-and-18-month-contract" tests="4" failures="0" skipped="3">
+    <testsuite name="make-choices;when-i-choose-iphone-z-and-18-month-contract" tests="4" failures="1" skipped="3">
         <properties>
-            <property name="URI" value="/Applications/AMPPS/www/MVT19/Sellaphone-to-test-2020/client/tests/selenium/features/choose.feature">
+            <property name="URI" value="C:/Users/admin.LANTBOFF4275/Documents/GitHub/Sellaphone-to-test-2020/client/tests/selenium/features/choose.feature">
             </property>
         </properties>
-        <testcase name="Given that I&apos;m at the Sellaphone page" classname="make-choices;when-i-choose-iphone-z-and-18-month-contract" time="10.498731459">
+        <testcase name="Given that I&apos;m at the Sellaphone page" classname="make-choices;when-i-choose-iphone-z-and-18-month-contract" time="3.1377926">
+            <failure message="WebDriverError: permission denied">WebDriverError: permission denied
+    at Object.throwDecodedError (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\error.js:497:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:519:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\firefox\index.js:571:41)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\index.js:645:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\firefoxDriver.js:17:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:39:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.navigate().to(http://localhost:8080/)
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Navigation.to (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:1131:25)
+    at thenableWebDriverProxy.get (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:988:28)
+    at Object.loadPage (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\helpers.js:17:23)
+    at createWorld.&lt;anonymous&gt; (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\client\tests\selenium\step-definitions\choose.js:7:19)</failure>
         </testcase>
         <testcase name="When I choose &apos;iPhone Z&apos;" classname="make-choices;when-i-choose-iphone-z-and-18-month-contract">
             <skipped message="">

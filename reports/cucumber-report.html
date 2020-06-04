@@ -270,8 +270,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">client</div>
           <div class="label-container">
-            <span class="label label-success" title=scenarios>Passed: 1</span>
-            <span class="label label-danger" title=scenarios>Failed: 0</span>
+            <span class="label label-success" title=scenarios>Passed: 0</span>
+            <span class="label label-danger" title=scenarios>Failed: 1</span>
           </div>
         </div>
       </div>
@@ -279,7 +279,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Tue Jun 02 2020 14:49:32 GMT+0200 (Central European Summer Time)</div>
+      <div class="generated-on">Thu Jun 04 2020 11:00:28 GMT+0200 (GMT+02:00)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -305,9 +305,9 @@ pre {
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Make choices
                         <span class="label-container">
-              <span class="label label-success"
-                                                         title="1 Scenarios Passed">1</span>
               
+              <span class="label label-danger"
+                                                         title="1 Scenarios Failed">1</span>
               
               
               
@@ -339,12 +339,12 @@ pre {
                                         </div>
                                         <div>
                             <span class="label-container">
-                              <span class="label label-success"
-                                                               title="1 Steps Passed">1</span>
                               
                               
                               
                               
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -362,8 +362,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -372,7 +372,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               10s 498ms
+                               3s 137ms
                               </span>
                             
                          
@@ -381,6 +381,82 @@ pre {
                       </span>
                                 
                                 
+
+                                    
+                                    <a href="#error0_00"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_00"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_00">
+                                            <br> WebDriverError: permission denied
+    at Object.throwDecodedError (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\error.js:497:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:519:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\firefox\index.js:571:41)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\index.js:645:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\firefoxDriver.js:17:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:39:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.navigate().to(http://localhost:8080/)
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Navigation.to (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:1131:25)
+    at thenableWebDriverProxy.get (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:988:28)
+    at Object.loadPage (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\helpers.js:17:23)
+    at createWorld.(anonymous) (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\client\tests\selenium\step-definitions\choose.js:7:19)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_00" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>WebDriverError: permission denied
+    at Object.throwDecodedError (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\error.js:497:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:519:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\firefox\index.js:571:41)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\index.js:645:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\firefoxDriver.js:17:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:39:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.navigate().to(http://localhost:8080/)
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Navigation.to (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:1131:25)
+    at thenableWebDriverProxy.get (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:988:28)
+    at Object.loadPage (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\helpers.js:17:23)
+    at createWorld.(anonymous) (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\client\tests\selenium\step-definitions\choose.js:7:19)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -523,6 +599,126 @@ pre {
                                 
                                 
                                 
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">After </span>
+                          <span> </span>
+                            
+                          
+                              <span class="step-duration">
+                               1ms
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_04"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_04"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_04">
+                                            <br> WebDriverError: permission denied
+    at Object.throwDecodedError (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\error.js:497:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:519:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\firefox\index.js:571:41)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\index.js:645:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\firefoxDriver.js:17:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:39:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.navigate().to(http://localhost:8080/)
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Navigation.to (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:1131:25)
+    at thenableWebDriverProxy.get (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:988:28)
+    at Object.loadPage (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\helpers.js:17:23)
+    at createWorld.(anonymous) (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\client\tests\selenium\step-definitions\choose.js:7:19)
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_04" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>WebDriverError: permission denied
+    at Object.throwDecodedError (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\error.js:497:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:519:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\firefox\index.js:571:41)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\index.js:645:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\firefoxDriver.js:17:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:39:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.navigate().to(http://localhost:8080/)
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at Navigation.to (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:1131:25)
+    at thenableWebDriverProxy.get (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:988:28)
+    at Object.loadPage (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\helpers.js:17:23)
+    at createWorld.(anonymous) (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\client\tests\selenium\step-definitions\choose.js:7:19)
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\admin.LANTBOFF4275\Documents\GitHub\Sellaphone-to-test-2020\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
                                 
                             </div>
                         </div>
@@ -560,8 +756,8 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 0,
-                                                            "passed" : 1,
+                                                            "failed" : 1,
+                                                            "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
@@ -570,8 +766,8 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 0,
-                                                            "passed" : 1,
+                                                            "failed" : 1,
+                                                            "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
